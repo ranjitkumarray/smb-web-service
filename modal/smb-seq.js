@@ -2,16 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const db = require('../db/server-connection');
 exports.basePrice = db.define("SMB - Base Price - Category Addition",
     {
-        "id": {
-            type: DataTypes.INTEGER,
-            primaryKey: true,
-            allowNull: false,
-        },
         "BusinessCode": {
-            type: DataTypes.STRING,
-            required: true,
-        },
-        "Market - Country": {
             type: DataTypes.STRING,
             required: true,
         },
@@ -23,17 +14,17 @@ exports.basePrice = db.define("SMB - Base Price - Category Addition",
             type: DataTypes.STRING,
             required: true,
         },
-        "Document Item Currency": {
+        "Document Item Country": {
             type: DataTypes.STRING,
             required: true,
         },
-        Amount: {
+        "Amount": {
             type: DataTypes.STRING,
             required: true,
             allowNull: true,
 
         },
-        Currency: {
+        "Currency": {
             type: DataTypes.STRING,
             required: true,
         },

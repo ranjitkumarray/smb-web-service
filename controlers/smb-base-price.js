@@ -1,5 +1,5 @@
 const db = require('../db/server-connection');
-const basePrice = require('../modal/smb-seq');
+const basePriceSeq = require('../modal/smb-seq');
 const certificate = require('../modal/extra-certificate');
 const deliveryMillSeq = require('../modal/delivery-mill');
 const FreightParitySeq = require('../modal/freight-parity');
@@ -16,13 +16,14 @@ exports.basePriceAddition = function (req, res, next) {
         req.body.forEach((element, index) => {
             // SMB - Base Price - Category Addition
             if (element.tableName === 'SMB - Base Price - Category Addition') {
-                basePrice.basePrice.findAll({
+                basePriceSeq.basePrice.findAll({
                     where: element.data, raw: true
                 }).then((result) => {
                     rowData.push({ 'Base_Price_Category_Addition': result })
+                    console.log("Comming")
                     if (req.body.length === index + 1) {
-                        res.setHeader('Content-Type', 'application/json');
                         setTimeout(() => {
+                            res.setHeader('Content-Type', 'application/json');
                             res.status(200).send(JSON.stringify(rowData))
                         })
                     }
@@ -32,7 +33,7 @@ exports.basePriceAddition = function (req, res, next) {
             }
             //SMB - Base Price - Category Addition - MiniBar
             if (element.tableName === 'SMB - Base Price - Category Addition - MiniBar') {
-                basePrice.basePriceMiniBar.findAll({
+                basePriceSeq.basePriceMiniBar.findAll({
                     where: element.data, raw: true
                 }).then((result) => {
                     rowData.push({ 'Base_Price_Category_Addition_MiniBar': result })
