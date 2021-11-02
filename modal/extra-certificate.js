@@ -28,7 +28,7 @@ exports.extraCertificate = db.define("SMB - Extra - Certificate",
         }
     })
 
-exports.extraCertificate = db.define("SMB - Extra - Certificate - MiniBar",
+exports.extraCertificateMiniBar = db.define("SMB - Extra - Certificate - MiniBar",
     {
         'BusinessCode': {
             type: DataTypes.STRING

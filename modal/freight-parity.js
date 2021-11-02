@@ -25,7 +25,7 @@ exports.freightParity = db.define("SMB - Extra - Freight Parity",
             type: DataTypes.STRING
         },
     })
-exports.freightParity = db.define("SMB - Extra - Freight Parity - MiniBar",
+exports.freightParityMiniBar = db.define("SMB - Extra - Freight Parity - MiniBar",
     {
         "Delivering Mill": {
             type: DataTypes.STRING

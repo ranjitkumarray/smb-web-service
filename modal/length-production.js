@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const db = require('../db/server-connection');
-exports.lengthProduction = db.define("SMB - Base Price - Category Addition",
+exports.lengthProduction = db.define("SMB - Extra - Length Production",
     {
         'BusinessCode':{
             type:DataTypes.STRING

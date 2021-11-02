@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const db = require('../db/server-connection');
-exports.lengthLogistic = db.define("SMB - Base Price - Category Addition",
+exports.lengthLogistic = db.define("SMB - Extra - Length Logistic",
     {
         'Country Group': {
             type: DataTypes.STRING
@@ -33,7 +33,7 @@ exports.lengthLogistic = db.define("SMB - Base Price - Category Addition",
             type: DataTypes.STRING
         },
     })
-exports.lengthLogisticMiniBar = db.define("SMB - Base Price - Category Addition",
+exports.lengthLogisticMiniBar = db.define("SMB - Extra - Length Logistic - MiniBar",
     {
         'Customer Group': {
             type: DataTypes.STRING

@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const db = require('../db/server-connection');
-exports.profileLberiaItaly = db.define("SMB - Base Price - Category Addition",
+exports.profileLberiaItaly = db.define("SMB - Extra - Profile Iberia and Italy",
     {
         'BusinessCode':{
             type:DataTypes.STRING

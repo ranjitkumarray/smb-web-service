@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const db = require('../db/server-connection');
-exports.profile = db.define("SMB - Base Price - Category Addition",
+exports.profile = db.define("SMB - Extra - Profile",
     {
         'BusinessCode': {
             type: DataTypes.STRING
@@ -33,7 +33,7 @@ exports.profile = db.define("SMB - Base Price - Category Addition",
             type: DataTypes.STRING
         },
     })
-exports.profileMiniBar = db.define("SMB - Base Price - Category Addition",
+exports.profileMiniBar = db.define("SMB - Extra - Profile - MiniBar",
     {
         'BusinessCode': {
             type: DataTypes.STRING
@@ -41,7 +41,7 @@ exports.profileMiniBar = db.define("SMB - Base Price - Category Addition",
         'Market - Country': {
             type: DataTypes.STRING
         },
-        'Product_Level_04': {
+        'Product Level 04': {
             type: DataTypes.STRING
         },
         'Product Level 05': {

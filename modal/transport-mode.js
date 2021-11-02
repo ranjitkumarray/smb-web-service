@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const db = require('../db/server-connection');
-exports.transportMode = db.define("SMB - Base Price - Category Addition",
+exports.transportMode = db.define("SMB - Extra - Transport Mode",
     {
         'BusinessCode': {
             type: DataTypes.STRING
@@ -27,7 +27,7 @@ exports.transportMode = db.define("SMB - Base Price - Category Addition",
             type: DataTypes.STRING
         },
     })
-exports.transportModeMiniBar = db.define("SMB - Base Price - Category Addition",
+exports.transportModeMiniBar = db.define("SMB - Extra - Transport Mode - MiniBar",
     {
         'Market Customer Group': {
             type: DataTypes.STRING

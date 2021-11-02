@@ -27,7 +27,7 @@ exports.grade = db.define("SMB - Extra - Grade",
             type: DataTypes.STRING
         },
     })
-exports.grade = db.define("SMB - Base Price - Category Addition",
+exports.gradeMiniBar = db.define("SMB - Extra - Grade - MiniBar",
     {
         'BusinessCode': {
             type: DataTypes.STRING
