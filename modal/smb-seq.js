@@ -14,7 +14,7 @@ exports.basePrice = db.define("SMB - Base Price - Category Addition",
             type: DataTypes.STRING,
             required: true,
         },
-        "Document Item Country": {
+        "Document Item Currency": {
             type: DataTypes.STRING,
             required: true,
         },
