@@ -27,5 +27,6 @@ exports.pool = new pg.Pool({
 })
 module.exports = new Sequelize('offertool', 'postgres', 'ocpphase01', {
     host: 'ocpphase1.cjmfkeqxhmga.eu-central-1.rds.amazonaws.com',
-    dialect: 'postgres'
+    dialect: 'postgres',
+    operatorsAliases: false,
 });
