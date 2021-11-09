@@ -34,7 +34,7 @@ exports.basePriceAddition = function (req, res, next) {
             //SMB - Base Price - Category Addition - MiniBar
             if (element.tableName === 'SMB - Base Price - Category Addition - MiniBar') {
                 basePriceSeq.basePriceMiniBar.findAll({
-                    where: element.data, raw: true
+                    where: element.data, raw: true,
                 }).then((result) => {
                     rowData.push({ 'Base_Price_Category_Addition_MiniBar': result })
                     console.log(rowData)

@@ -79,5 +79,6 @@ exports.basePriceMiniBar = db.define("SMB - Base Price - Category Addition - Min
     {
         freezeTableName: true,
         timestamps: false,
+        schema: 'SMB' 
     }
 )

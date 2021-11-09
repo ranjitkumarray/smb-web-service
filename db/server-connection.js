@@ -27,6 +27,6 @@ exports.pool = new pg.Pool({
 })
 module.exports = new Sequelize('offertool', 'postgres', 'ocpphase01', {
     host: 'ocpphase1.cjmfkeqxhmga.eu-central-1.rds.amazonaws.com',
-    dialect: 'postgres',
-    operatorsAliases: false,
+    dialect: 'postgres'
 });
+// ssh -i "C:\Users\User\Downloads\ocpphase1.pem" ubuntu@ec2-18-159-253-5.eu-central-1.compute.amazonaws.com
