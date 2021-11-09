@@ -32,6 +32,12 @@ exports.lengthProduction = db.define("SMB - Extra - Length Production",
         'Currency':{
             type:DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
 exports.lengthProductionMiniBar = db.define("SMB - Base Price - Category Addition",
     {
@@ -68,4 +74,10 @@ exports.lengthProductionMiniBar = db.define("SMB - Base Price - Category Additio
         'Currency':{
             type:DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })

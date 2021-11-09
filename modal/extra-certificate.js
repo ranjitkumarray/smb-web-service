@@ -26,6 +26,12 @@ exports.extraCertificate = db.define("SMB - Extra - Certificate",
         'Currency': {
             type: DataTypes.STRING
         }
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
 
 exports.extraCertificateMiniBar = db.define("SMB - Extra - Certificate - MiniBar",
@@ -57,4 +63,10 @@ exports.extraCertificateMiniBar = db.define("SMB - Extra - Certificate - MiniBar
         'Currency': {
             type: DataTypes.STRING
         }
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })

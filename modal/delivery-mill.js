@@ -26,6 +26,12 @@ exports.deliveryMill = db.define("SMB - Extra - Delivery Mill",
         'Currency': {
             type: DataTypes.STRING
         }
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
 exports.deliveryMillMiniBar = db.define("SMB - Extra - Delivery Mill - MiniBar",
     {
@@ -53,4 +59,10 @@ exports.deliveryMillMiniBar = db.define("SMB - Extra - Delivery Mill - MiniBar",
         'Currency': {
             type: DataTypes.STRING
         }
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })

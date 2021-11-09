@@ -26,6 +26,12 @@ exports.grade = db.define("SMB - Extra - Grade",
         'Currency': {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
 exports.gradeMiniBar = db.define("SMB - Extra - Grade - MiniBar",
     {
@@ -53,4 +59,10 @@ exports.gradeMiniBar = db.define("SMB - Extra - Grade - MiniBar",
         'Currency': {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })

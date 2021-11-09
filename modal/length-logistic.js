@@ -32,6 +32,12 @@ exports.lengthLogistic = db.define("SMB - Extra - Length Logistic",
         'Currency': {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
 exports.lengthLogisticMiniBar = db.define("SMB - Extra - Length Logistic - MiniBar",
     {
@@ -68,4 +74,10 @@ exports.lengthLogisticMiniBar = db.define("SMB - Extra - Length Logistic - MiniB
         'Currency': {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })

@@ -26,6 +26,12 @@ exports.transportMode = db.define("SMB - Extra - Transport Mode",
         'Currency': {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
 exports.transportModeMiniBar = db.define("SMB - Extra - Transport Mode - MiniBar",
     {
@@ -53,4 +59,10 @@ exports.transportModeMiniBar = db.define("SMB - Extra - Transport Mode - MiniBar
         'Currency': {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB'
+
     })

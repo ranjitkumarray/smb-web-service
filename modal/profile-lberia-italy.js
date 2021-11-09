@@ -26,6 +26,12 @@ exports.profileLberiaItaly = db.define("SMB - Extra - Profile Iberia and Italy",
         'Currency':{
             type:DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
 exports.profileLberiaItalyMiniBar = db.define("SMB - Base Price - Category Addition",
     {
@@ -59,4 +65,10 @@ exports.profileLberiaItalyMiniBar = db.define("SMB - Base Price - Category Addit
         'Currency':{
             type:DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })

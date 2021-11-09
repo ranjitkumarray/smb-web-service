@@ -24,6 +24,12 @@ exports.freightParity = db.define("SMB - Extra - Freight Parity",
         "Currency": {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
 exports.freightParityMiniBar = db.define("SMB - Extra - Freight Parity - MiniBar",
     {
@@ -54,4 +60,10 @@ exports.freightParityMiniBar = db.define("SMB - Extra - Freight Parity - MiniBar
         "Market Customer Group": {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })

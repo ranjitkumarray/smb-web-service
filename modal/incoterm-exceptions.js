@@ -29,4 +29,10 @@ exports.incotermExceptions = db.define("SMB - Base Price - Incoterm Exceptions",
         'Currency': {
             type: DataTypes.STRING
         }
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })

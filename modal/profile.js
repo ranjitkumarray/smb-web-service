@@ -32,6 +32,12 @@ exports.profile = db.define("SMB - Extra - Profile",
         'Currency': {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
 exports.profileMiniBar = db.define("SMB - Extra - Profile - MiniBar",
     {
@@ -68,4 +74,10 @@ exports.profileMiniBar = db.define("SMB - Extra - Profile - MiniBar",
         'Currency': {
             type: DataTypes.STRING
         },
+    },
+    {
+        freezeTableName: true,
+        timestamps: false,
+        schema: 'SMB' 
+
     })
