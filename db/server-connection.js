@@ -1,6 +1,6 @@
-const { createPool } = require('mysql');
-const { Sequelize } = require('sequelize');
-//local setup
+// const { createPool } = require('mysql');
+// const { Sequelize } = require('sequelize');
+// //local setup
 // exports.pool = createPool({
 //     host: "localhost",
 //     user: 'ranjit',
@@ -13,13 +13,16 @@ const { Sequelize } = require('sequelize');
 //     dialect: 'mysql'
 // });
 
+var pg = require('pg')
+const { Sequelize } = require('sequelize');
 // prod setup 
-exports.pool = createPool({
+exports.pool = new pg.Pool({
     database='offertool',
     user='postgres',
     password='ocpphase01',
     host='ocpphase1.cjmfkeqxhmga.eu-central-1.rds.amazonaws.com',
-    connectionLimit: 20
+    max: 20,
+    idleTimeoutMillis: 30000
 
 })
 module.exports = new Sequelize('offertool', 'postgres', 'ocpphase01', {

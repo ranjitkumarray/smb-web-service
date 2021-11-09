@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "build": "npm run build-source",
     "start": "if [[SORCE_env=='production']]; then node ./bin/www;else nodemon ./bin/www; fi"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.3.2",
     "nodemon": "^2.0.14",
+    "pg": "^8.7.1",
     "read-excel-file": "^5.2.20",
     "sequelize": "^6.8.0"
   }
